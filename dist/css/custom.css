@@ -31,10 +31,13 @@ label{
   display: block;
 }
 
-textarea{
-  height: 100px;
+input[type="text"]{
+  height: 25px;
   display: block;
-
+  border-radius: 0px;
+  border: none;
+  margin-top: 5px;
+  max-width: 200px;
 }
 
 input[type="submit"]{
