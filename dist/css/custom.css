@@ -40,10 +40,12 @@ input[type="text"]{
   max-width: 200px;
 }
 
-input[type="submit"]{
+button{
   height: 30px;
   border-radius: 0px;
   border: none;
   display: block;
   margin:10px auto;
+  background-color: #FFFFFF;
+  /*background: transparent;*/
 }
