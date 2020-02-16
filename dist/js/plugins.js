@@ -1,24 +1,32 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-  var method;
-  var noop = function () {};
-  var methods = [
-    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-    'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
-  ];
-  var length = methods.length;
-  var console = (window.console = window.console || {});
 
-  while (length--) {
-    method = methods[length];
 
-    // Only stub undefined methods.
-    if (!console[method]) {
-      console[method] = noop;
+function sumbitLoverNames(){
+
+  var couplesJSONObj = {"coupleNames":[]};
+
+  var nameLover1 = document.getElementById("LoverName1").value;
+  var nameLover2 = document.getElementById("LoverName2").value;
+  //herz code:0x03
+//  var coupleObj = JSON.parse(couplesJSON);
+  couplesJSONObj['coupleNames'].push({"name1":nameLover1, "name2":nameLover2});
+  couplesJSON = JSON.stringify(couplesJSONObj);
+  $.ajax({
+    url : "http://localhost:8080/notify",
+    type : "POST",
+    data : couplesJSON,
+    dataType : "json",
+    contentType: "application/json",
+    success : function(res){
+      console.log(res)
+    },
+    error : function(e){
+      console.log(e)
     }
-  }
-}());
+  })
+  console.log(couplesJSON)
+  document.getElementById("LoverName1").value = ""
+  document.getElementById("LoverName2").value = ""
+ 
+}
 
-// Place any jQuery/helper plugins in here.
+
