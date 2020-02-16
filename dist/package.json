@@ -18,7 +18,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./js/mains.js"
+    "start": "node ./js/mains.js",
+    "build": "webpack"
 
   },
   "author": "",
