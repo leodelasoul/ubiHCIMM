@@ -1,8 +1,10 @@
 {
   "name": "lovebridgeio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a frontend to operate lovebridge",
+  "engines": {
+    "node" : "12.13.0"
+  },
   "directories": {
     "doc": "doc"
   },
@@ -15,7 +17,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "node ./js/main.js",
+    "start": "node ./js/mains.js"
+
   },
   "author": "",
   "license": "ISC"
