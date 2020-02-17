@@ -35,7 +35,7 @@ var client = mqtt.connect("mqtt://1640f7e3:183a633f80feec7e@broker.shiftr.io",
   { clientId: "javascript" }
 );
 
-app.post('/notify',,cors() (req, res) => {
+app.post('/notify',cors(), (req, res) => {
   var stringToSend = req.body.coupleNames[0].name1 + " <3 " + req.body.coupleNames[0].name2
   client.publish('/loversNames', stringToSend);
 
