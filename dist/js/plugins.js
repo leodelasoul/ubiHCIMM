@@ -11,7 +11,7 @@ function sumbitLoverNames(){
   couplesJSONObj['coupleNames'].push({"name1":nameLover1, "name2":nameLover2});
   couplesJSON = JSON.stringify(couplesJSONObj);
   $.ajax({
-    url : "http://localhost:8080/notify",
+    url : "https://lovebridge.herokuapp.com/notify",
     type : "POST",
     data : couplesJSON,
     dataType : "json",
