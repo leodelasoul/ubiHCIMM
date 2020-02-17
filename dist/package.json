@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a frontend to operate lovebridge",
   "engines": {
-    "node" : "12.13.0"
+    "node": "12.13.0"
   },
   "directories": {
     "doc": "doc"
@@ -19,7 +19,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./js/main.js"
-
   },
   "author": "",
   "license": "ISC"
