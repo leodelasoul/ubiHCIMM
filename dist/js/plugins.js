@@ -26,7 +26,4 @@ function sumbitLoverNames(){
   console.log(couplesJSON)
   document.getElementById("LoverName1").value = ""
   document.getElementById("LoverName2").value = ""
- 
 }
-
-
