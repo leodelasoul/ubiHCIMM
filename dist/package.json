@@ -15,7 +15,9 @@
     "mqtt": "^3.0.0",
     "package.json": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cors":"^2.8.5";
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./js/main.js"
