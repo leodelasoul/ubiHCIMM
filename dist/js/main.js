@@ -7,7 +7,7 @@ const router = express.Router();
 var bodyParser = require('body-parser')
 
 
-app.use(express.static(__dirname + './..'), router, cors);
+app.use(express.static(__dirname + './..'), router, cors());
 
 app.use(function(req, res, next){
   res.header("Access-Control-Allow-Origin", 'localhost:8080');
